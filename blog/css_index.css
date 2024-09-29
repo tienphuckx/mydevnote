@@ -1,0 +1,333 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f0f0f0;
+
+    color: #333;
+
+}
+
+
+
+.container {
+
+    width: 90%;
+
+    margin: 0 auto;
+
+}
+
+
+
+header {
+
+    background-color: #333;
+
+    color: #fff;
+
+    padding: 1rem 0;
+
+}
+
+
+
+header h1 {
+
+    text-align: center;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+
+.login-btn {
+
+    background-color: #007bff;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+
+
+.login-btn:hover {
+
+    background-color: #0056b3;
+
+}
+
+
+
+.post-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+
+    padding: 1rem 0;
+
+}
+
+
+
+.post {
+
+    background-color: #fff;
+
+    padding: 1rem;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+footer {
+
+    background-color: #333;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 1rem 0;
+
+}
+
+
+
+/* Card */
+
+
+
+.wel_come p {
+
+    color: gray;
+
+    font-style: italic;
+
+    font-size: 14px;
+
+}
+
+
+
+.a-card .card-title {
+
+    font-size: 17px;
+
+    color: rgb(50, 106, 179);
+
+}
+
+
+
+
+
+.a-card {
+
+  text-decoration: none !important;
+
+}
+
+
+
+.card .card-body .card-text {
+
+  color: black;
+
+  font-size: 13px;
+
+}
+
+
+
+footer .cpy-right{
+
+  color: gray;
+
+}
+
+
+
+
+
+/** right-area */
+
+.right-area {
+
+  padding: 1rem 0;
+
+}
+
+
+
+/* index -> list post -> card */
+
+.card {
+
+
+
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+
+    .post-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    .post-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .post-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+.card-footer {
+
+    display: flex;
+
+    justify-content: space-between; /* Space between tags and created date */
+
+    align-items: center; /* Align items vertically centered */
+
+    padding: 10px;
+
+}
+
+
+
+.tags {
+    display: flex;
+    gap: 8px; 
+}
+
+.badge {
+    background-color: #333;
+}
+
+.time {
+    font-size: 13px;
+    font-style: italic;
+    color: black;
+}
+
+
+
+.created-date {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .card-footer {
+
+        flex-direction: column; /* Stack tags and date on small screens */
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .created-date {
+
+        margin-top: 10px;
+
+    }
+
+}
+
+
+
